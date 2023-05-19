@@ -1,0 +1,13 @@
+name = "SPTNRTL"
+uuid = "22e4dba4-5ee0-4b37-8fba-c2ef4d887291"
+authors = ["longemen3000 <longemen3000@gmail.com> and contributors"]
+version = "1.0.0"
+
+[compat]
+julia = "1.6"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
