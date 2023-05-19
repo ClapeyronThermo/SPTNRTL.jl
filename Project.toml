@@ -1,13 +1,27 @@
 name = "SPTNRTL"
 uuid = "22e4dba4-5ee0-4b37-8fba-c2ef4d887291"
-authors = ["longemen3000 <longemen3000@gmail.com> and contributors"]
+authors = ["Andrés Riedemann <longemen3000@gmail.com> and contributors"]
 version = "1.0.0"
 
+[deps]
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+Downloads = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
+PrecompileTools = "aea7be01-6a6a-4083-8856-8a6e6704d82a"
+Preferences = "21216c6a-2e73-6563-6e65-726566657250"
+
+[weakdeps]
+Clapeyron = "7c7805af-46cc-48c9-995b-ed0ed2dc909a"
+
+[extensions]
+SPTNRTLClapeyronExt = "Clapeyron"
+
 [compat]
-julia = "1.6"
+Clapeyron = "0.4.11"
+julia = "1.9"
 
 [extras]
+Clapeyron = "7c7805af-46cc-48c9-995b-ed0ed2dc909a"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
-test = ["Test"]
+test = ["Clapeyron", "Test"]
